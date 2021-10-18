@@ -1,0 +1,701 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 855,
+    "items": [
+    {
+    "kind": "books#volume",
+    "id": "ncaJDQAAQBAJ",
+    "etag": "THkPxDC7Nx4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ncaJDQAAQBAJ",
+    "volumeInfo": {
+    "title": "The Art of Innovation",
+    "subtitle": "Lessons in Creativity from Ideo, America's Leading Design Firm",
+    "authors": [
+    "TOM AUTOR KELLEY"
+    ],
+    "publisher": "Broadway Business",
+    "publishedDate": "2001-01-01",
+    "description": "The general manager of IDEO, the design firm that created the Apple Mouse and the Palm V, reveals strategies for fostering imagination, expressing ideas, and developing hit products by bringing out the creativity in every employee. 20,000 first printing.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9780385499842"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "0385499841"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 307,
+    "printType": "BOOK",
+    "categories": [
+    "Business & Economics"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 5,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.0.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=ncaJDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=ncaJDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=ncaJDQAAQBAJ&dq=the+art&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=ncaJDQAAQBAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Innovation.html?hl=&id=ncaJDQAAQBAJ"
+    },
+    "saleInfo": {},
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=ncaJDQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "The general manager of IDEO, the design firm that created the Apple Mouse and the Palm V, reveals strategies for fostering imagination, expressing ideas, and developing hit products by bringing out the creativity in every employee. 20,000 ..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "evFZAAAAYAAJ",
+    "etag": "/ReMLlUy+rM",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/evFZAAAAYAAJ",
+    "volumeInfo": {
+    "title": "The Art Journal",
+    "publishedDate": "1875",
+    "industryIdentifiers": [
+    {
+    "type": "OTHER",
+    "identifier": "PRNC:32101082376813"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "printType": "BOOK",
+    "categories": [
+    "Art"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.2.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=evFZAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=evFZAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=evFZAAAAYAAJ&q=the+art&dq=the+art&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=evFZAAAAYAAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_Journal.html?hl=&id=evFZAAAAYAAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=evFZAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "The associate teachers are D. Cady Eaton, M.A., Professor of the History <b>of Art</b>; john H. Neimeyer, Professor of Drawing; and Frederick R. Hovey, Instructor in Geometry and Perspective. The course of study is based upon progressive&nbsp;..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "0HBgRBObbh8C",
+    "etag": "3lAv+BM0/+s",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/0HBgRBObbh8C",
+    "volumeInfo": {
+    "title": "The Art of Colored Pencil Drawing",
+    "subtitle": "Discover Techniques for Creating Beautiful Works of Art in Colored Pencil",
+    "authors": [
+    "Cynthia Knox",
+    "Eileen Sorg",
+    "Pat Averill",
+    "Debra Kaufman Yaun"
+    ],
+    "publisher": "Walter Foster Pub",
+    "publishedDate": "2013-05-15",
+    "description": "Offers step-by-step instructions for completing twenty-seven colored pencil drawing projects, offering advice on appropriate supplies, color theory, and basic techniques in the medium.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9781600583377"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "1600583377"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 144,
+    "printType": "BOOK",
+    "categories": [
+    "Art"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=0HBgRBObbh8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=0HBgRBObbh8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=0HBgRBObbh8C&printsec=frontcover&dq=the+art&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=0HBgRBObbh8C&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Colored_Pencil_Drawing.html?hl=&id=0HBgRBObbh8C"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=0HBgRBObbh8C&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "The book opens with fundamental information on supplies, color theory, and basic techniques--from layering and blending to burnishing."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "itpPAAAAMAAJ",
+    "etag": "mzDQJAMqur4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/itpPAAAAMAAJ",
+    "volumeInfo": {
+    "title": "The Art of Healing",
+    "subtitle": "Medicine and Science in American Art",
+    "authors": [
+    "William H. Gerdts"
+    ],
+    "publishedDate": "1981",
+    "industryIdentifiers": [
+    {
+    "type": "OTHER",
+    "identifier": "UOM:39015040985692"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 119,
+    "printType": "BOOK",
+    "categories": [
+    "Art and science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.2.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=itpPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=itpPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=itpPAAAAMAAJ&q=the+art&dq=the+art&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=itpPAAAAMAAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Healing.html?hl=&id=itpPAAAAMAAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=itpPAAAAMAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "To Lloyd Goodrich Whose scholarship in regard to <b>the art</b> and life of Thomas Eakins is as crucial to the development of American <b>art</b> history As Eakins &#39; s Gross Clinic is central to the present exhibition , This book is respectfully&nbsp;..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "U4tCEAAAQBAJ",
+    "etag": "3w5vqWOyOYc",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/U4tCEAAAQBAJ",
+    "volumeInfo": {
+    "title": "The Art of Herbal Healing",
+    "subtitle": "Herbalism for Beginners",
+    "authors": [
+    "Ava Green"
+    ],
+    "publisher": "Green HopeX",
+    "publishedDate": "2021-03-15",
+    "description": "If you want to reconnect with nature and discover the healing power of herbs then keep reading… The truth is... our bodies give us signs to heal imbalances. But if we ignore these signs and ONLY rely on conventional drugs to cover up the symptoms instead of searching for and managing the root cause, it can be a recipe for disaster. You will learn: The ONE Herb You Need to Calm Your Nerves and Anxiety and How to Make It Into a Tincture or Essential Oil and More… How to Make Your Natural First-Aid Kit The Necessity of Understanding the Anatomy of Herbs 14 Effective Ways to Harness the Essence of Herbs 71 Ailments and Their Herbal Remedies at Your Fingertips The Benefits of Herbalism and What’s Important for Your Body 40 Herbs Found In America and Europe, How to Grow, Harvest and Use Them A Simple Strategy to Make Your Dream Home Apothecary Into a Reality If you want to get rid of the ailment, you need to find and treat the root cause. That is possible with medicinal herbs, and this book will show you the way! Even if you’ve never made or tried a home remedy, this guide is so fun and easy to follow that you can start making your own herbal medicine in just 10 days. With The Art of Herbal Healing: Herbalism for Beginners, an expert herbalist, Ava Green, will take you on a unique herbal journey where you will learn how to find science-backed natural remedies for your ailments. To help protect YOU and YOUR family. If you never want to rely on pharmaceuticals again, get it now! Scroll up to the top of the page and select “Buy now with 1-Click ”",
+    "readingModes": {
+    "text": true,
+    "image": true
+    },
+    "pageCount": 152,
+    "printType": "BOOK",
+    "categories": [
+    "Health & Fitness"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=U4tCEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=U4tCEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ar",
+    "previewLink": "http://books.google.com.eg/books?id=U4tCEAAAQBAJ&pg=PP1&dq=the+art&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=U4tCEAAAQBAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Herbal_Healing.html?hl=&id=U4tCEAAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.com.eg/books/download/The_Art_of_Herbal_Healing-sample-epub.acsm?id=U4tCEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.com.eg/books/download/The_Art_of_Herbal_Healing-sample-pdf.acsm?id=U4tCEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=U4tCEAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "<b>THE ART</b> OF HERBAL HEALING Herbalism for Beginners AVA GREEN ©Copyright 2021 Green HopeX – All rights reserved. The content. Front Cover."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "Xp85DQAAQBAJ",
+    "etag": "QTFq4jUu5/s",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Xp85DQAAQBAJ",
+    "volumeInfo": {
+    "title": "The Art of Lobbying",
+    "authors": [
+    "Bertram J Levine"
+    ],
+    "publisher": "SAGE",
+    "publishedDate": "2009",
+    "description": "Often the whipping boys of politicians and pundits, lobbyists are the recipients of lampooning stump portrayals and sensationalized news coverage. Little attention is given to how most lobbyists simply do their job or become effective at what they do. Whether it&BAD:’s helping staff draft legislative language, providing members with quality policy and political information, or just being a good listener, lobbyists must build and maintain relationships. If they do, they&BAD:’ll succeed in advancing their policy objectives within the give-and-take process of the American legislative system. The Art of Lobbying examines strategies and techniques from the perspective of those who are lobbied&BAD:—the people who know what resonates and what falls upon deaf ears in congressional offices. A former longtime lobbyist himself, Levine has interviewed more than 40 current or former members of Congress, along with their staffers, to give a thorough review of the relevant academic literature and offer a behind-the-scenes perspective on what constitutes the art of lobbying.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9780872894624"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "0872894622"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 249,
+    "printType": "BOOK",
+    "categories": [
+    "Political Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=Xp85DQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=Xp85DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=Xp85DQAAQBAJ&printsec=frontcover&dq=the+art&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=Xp85DQAAQBAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Lobbying.html?hl=&id=Xp85DQAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Xp85DQAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "This book examines strategies and techniques from the perspective of those who are lobbied--the people who know what resonates and what falls flat in congressional offices."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "ihuVDAAAQBAJ",
+    "etag": "l3cNOetDA6g",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/ihuVDAAAQBAJ",
+    "volumeInfo": {
+    "title": "The Art of Slide (West Coast Edition)",
+    "authors": [
+    "Leonard Anderson"
+    ],
+    "publisher": "Lulu.com",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9781300988366"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "1300988363"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.0.0.preview.1",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=ihuVDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=ihuVDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ar",
+    "previewLink": "http://books.google.com.eg/books?id=ihuVDAAAQBAJ&pg=PT3&dq=the+art&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=ihuVDAAAQBAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Slide_West_Coast_Edition.html?hl=&id=ihuVDAAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=ihuVDAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Sliding is <b>an art</b> form that is widely respected. It takes a mastery of physics on Wheels to execute. Using trajectory the slide is <b>the art</b> of being out of&nbsp;..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "H4SrDwAAQBAJ",
+    "etag": "ingne9CBlTQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/H4SrDwAAQBAJ",
+    "volumeInfo": {
+    "title": "Inferno: The Art Collection (Arabic Edition)",
+    "authors": [
+    "Dino Di Durante"
+    ],
+    "publisher": "Gotimna Publications",
+    "publishedDate": "2015-01-30",
+    "description": "الصور المذهلة من الجحيم المستتخدة في اثنين من الافلام المشهود لها. هل تحب كتب الرعب؟ \"الجحيم\" سوف يرعبك حتى الموت الجحيم - المجموعة الفنية لدينو دي دورانتي، ، هو كتاب ملون كامل من72 قطعة فنية مقتبسة من قصة جحيم دانتي ،الجزء الأول من التحفةالأدبية، الكوميديا الإلهية التي كتبها دانتي أليغييري، ثاني أعظم قصة مسيحية بعد الإنجيل. هذه هي رؤية جديدة تماما،عميقة، ورائعةمن الجحيم التي كتبها دينو دي دورانتي، الذي درس هذه التحفة الفنية باللغة الإيطالية الأصلية لأكثر من 30 .عاما",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9781628790580"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "162879058X"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 84,
+    "printType": "BOOK",
+    "categories": [
+    "Art"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=H4SrDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=H4SrDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "ar",
+    "previewLink": "http://books.google.com.eg/books?id=H4SrDwAAQBAJ&pg=PT5&dq=the+art&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=H4SrDwAAQBAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Inferno_The_Art_Collection_Arabic_Editio.html?hl=&id=H4SrDwAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.com.eg/books/download/Inferno_The_Art_Collection_Arabic_Editio-sample-pdf.acsm?id=H4SrDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=H4SrDwAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "<b>الفن</b> يرى هنا ليس كالمطبوعات الحجرية الدور ليست بالابيض والاسود، ولا كاللوحات المجردة السلفادور دالي الذي قام بها لاحقا، بدلا من ذلك تقدم دي دورانتي مجموعة&nbsp;..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "BOfDwu3ssQoC",
+    "etag": "jkIe0YIJU38",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/BOfDwu3ssQoC",
+    "volumeInfo": {
+    "title": "The Art of Enameling",
+    "subtitle": "Techniques, Projects, Inspiration",
+    "authors": [
+    "Linda Darty"
+    ],
+    "publisher": "Sterling Publishing Company, Inc.",
+    "publishedDate": "2006",
+    "description": "Offers a complete introduction to all of the popular techniques of enameling, with practical advice on how to set up a studio and detailed, step-by-step instructions for fourteen creative projects that use such methods as cloisonne, champleve, and plique, as well as the latest experimental techniques.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_10",
+    "identifier": "157990954X"
+    },
+    {
+    "type": "ISBN_13",
+    "identifier": "9781579909543"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 176,
+    "printType": "BOOK",
+    "categories": [
+    "Crafts & Hobbies"
+    ],
+    "averageRating": 5,
+    "ratingsCount": 2,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.0.1.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=BOfDwu3ssQoC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=BOfDwu3ssQoC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=BOfDwu3ssQoC&dq=the+art&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=BOfDwu3ssQoC&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_of_Enameling.html?hl=&id=BOfDwu3ssQoC"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=BOfDwu3ssQoC&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Offers a complete introduction to all of the popular techniques of enameling, with practical advice on how to set up a studio and detailed, step-by-step instructions for fourteen creative projects that use such methods as cloisonne, ..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "mqtWAAAAYAAJ",
+    "etag": "wZ0R2DoAVkM",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/mqtWAAAAYAAJ",
+    "volumeInfo": {
+    "title": "The Art Quarterly",
+    "publishedDate": "1950",
+    "industryIdentifiers": [
+    {
+    "type": "OTHER",
+    "identifier": "PSU:000068326395"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "printType": "BOOK",
+    "categories": [
+    "Art"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.2.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=mqtWAAAAYAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=mqtWAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com.eg/books?id=mqtWAAAAYAAJ&q=the+art&dq=the+art&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.com.eg/books?id=mqtWAAAAYAAJ&dq=the+art&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Art_Quarterly.html?hl=&id=mqtWAAAAYAAJ"
+    },
+    "saleInfo": {
+    "country": "EG",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "EG",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=mqtWAAAAYAAJ&hl=&printsec=frontcover&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "His works are found in most museums, occur frequently in private collections and <b>the art</b> market, and exist in numerous forms: preliminary studies, sketches, small and large versions and replicas by the artist himself."
+    }
+    }
+    ]
+    }
