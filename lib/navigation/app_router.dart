@@ -40,14 +40,14 @@ class AppRouter extends RouterDelegate
         if (appStateManager.isInitialized && !appStateManager.isLoggedIn)
           LoginScreen.page(),
         if (appStateManager.isLoggedIn) Home.page(),
-        if (bookManager.selectedIndex != -1)
-          BookDetails.page(
-            item: bookManager.selectedBook,
-            index: bookManager.selectedIndex,
-            onUpdate: (item, index) {
-              bookManager.addBookToFavorite(index);
-            },
-          ),
+        // if (bookManager.selectedIndex != -1)
+        //   BookDetails.page(
+        //     item: bookManager.selectedBook,
+        //     index: bookManager.selectedIndex,
+        //     onUpdate: (item, index) {
+        //       bookManager.addBookToFavorite(index);
+        //     },
+        //   ),
       ],
     );
   }

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:librum/librum_theme.dart';
-
-import 'models/book.dart';
+import 'package:librum/network/book_model.dart';
 
 class BookCard extends StatelessWidget {
-  final Book book;
+  final APIBook book;
 
   const BookCard({Key? key, required this.book}) : super(key: key);
 
@@ -42,7 +41,7 @@ class BookCard extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  book.author,
+                  book.authors.toString(),
                   style: LibrumTheme.lightTextTheme.bodyText2,
                 ),
                 Text(
@@ -53,12 +52,12 @@ class BookCard extends StatelessWidget {
                   children: [
                     const Icon(Icons.star_rate_rounded),
                     Text(
-                      book.rating.toString(),
+                      book.averageRating.toString(),
                       style: LibrumTheme.lightTextTheme.bodyText2,
                     ),
                   ],
                 ),
-                InputChip(label: Text(book.category)),
+                InputChip(label: Text(book.categories.toString())),
               ],
             )
           ],
