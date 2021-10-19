@@ -1,9 +1,12 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
-import 'package:librum/book_card.dart';
+import 'package:librum/ui/book_card.dart';
 import 'package:librum/librum_theme.dart';
 import 'package:librum/models/book_manager.dart';
 import 'package:librum/navigation/librum_pages.dart';
-import 'package:librum/screens/book_details_screen.dart';
+import 'package:librum/network/book_service.dart';
+import 'package:librum/ui/book_details_screen.dart';
 
 import 'dart:convert';
 import '../../network/book_model.dart';
@@ -31,23 +34,64 @@ const String subtitle = "Famous Books";
 const String searchBar = "Search for books...";
 
 class _HomeState extends State<Home> {
-  APIBookQuery? _currentBooks1;
+  final ScrollController _scrollController = ScrollController();
+  late TextEditingController searchTextController;
+
+  List<APIItems> currentSearchList = [];
+  int currentCount = 0;
+  int currentStartPosition = 0;
+  int currentEndPosition = 20;
+  int pageCount = 20;
+  bool hasMore = false;
+  bool loading = false;
+  bool inErrorState = false;
+  List<String> previousSearches = <String>[];
 
   @override
   void initState() {
-    loadBooks();
     super.initState();
+    searchTextController = TextEditingController(text: '');
+    _scrollController.addListener(() {
+      final triggerFetchMoreSize =
+          0.7 * _scrollController.position.maxScrollExtent;
+
+      if (_scrollController.position.pixels > triggerFetchMoreSize) {
+        if (hasMore &&
+            currentEndPosition < currentCount &&
+            !loading &&
+            !inErrorState) {
+          setState(() {
+            loading = true;
+            currentStartPosition = currentEndPosition;
+            currentEndPosition =
+                min(currentStartPosition + pageCount, currentCount);
+          });
+        }
+      }
+    });
   }
 
-  Future loadBooks() async {
-    final jsonString = await rootBundle.loadString('assets/books1.json');
-    setState(() {
-      _currentBooks1 = APIBookQuery.fromJson(jsonDecode(jsonString));
-    });
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    searchTextController.dispose();
+    super.dispose();
+  }
+
+  // 1
+  Future<APIBookQuery> getBookData(String query, int from, int to) async {
+    // 2
+    final bookJson = await BookService().getBooks(query);
+    // 3
+    final bookMap = json.decode(bookJson);
+    // 4
+    return APIBookQuery.fromJson(bookMap);
   }
 
   Widget _buildBookCard(
       BuildContext topLevelContext, List<APIItems> items, int index) {
+    final itemWidth = MediaQuery.of(context).size.width;
+
     // 1
     final book = items[index].book;
     return GestureDetector(
@@ -61,21 +105,65 @@ class _HomeState extends State<Home> {
         ));
       },
       // 2
-      child: BookCard(
-        book: book,
-      ),
+      child: bookCard(book, itemWidth),
     );
   }
 
-  Widget _buildBooksLoader(BuildContext context) {
+  Widget _buildBookLoader(BuildContext context) {
     // 1
-    if (_currentBooks1 == null || _currentBooks1?.items == null) {
+    if (searchTextController.text.length < 3) {
       return Container();
     }
-    // Show a loading indicator while waiting for the Books
-    return Center(
-      // 2
-      child: _buildBookCard(context, _currentBooks1!.items, 0),
+    // 2
+    return FutureBuilder<APIBookQuery>(
+      // 3
+      future: getBookData(searchTextController.text.trim(),
+          currentStartPosition, currentEndPosition),
+      // 4
+      builder: (context, snapshot) {
+        // 5
+        if (snapshot.connectionState == ConnectionState.done) {
+          // 6
+          if (snapshot.hasError) {
+            return Center(
+              child: Text(snapshot.error.toString(),
+                  textAlign: TextAlign.center, textScaleFactor: 1.3),
+            );
+          }
+
+          // 7
+          loading = false;
+          final query = snapshot.data;
+          inErrorState = false;
+          if (query != null) {
+            currentSearchList.addAll(query.items);
+          }
+          return _buildBookList(context, currentSearchList);
+        }
+        // 10
+        else {
+          // 11
+          if (currentCount == 0) {
+            // Show a loading indicator while waiting for the recipes
+            return const Center(child: CircularProgressIndicator());
+          } else {
+            // 12
+            return _buildBookList(context, currentSearchList);
+          }
+        }
+      },
+    );
+  }
+
+  Widget _buildBookList(BuildContext bookListContext, List<APIItems> items) {
+    return Flexible(
+      child: ListView.builder(
+        controller: _scrollController,
+        itemCount: items.length,
+        itemBuilder: (BuildContext context, int index) {
+          return _buildBookCard(bookListContext, items, index);
+        },
+      ),
     );
   }
 
@@ -102,6 +190,10 @@ class _HomeState extends State<Home> {
                   shadowColor: Colors.grey,
                   borderRadius: const BorderRadius.all(Radius.circular(100.0)),
                   child: TextField(
+                    controller: searchTextController,
+                    onSubmitted: (value) {
+                      startSearch(value);
+                    },
                     textInputAction: TextInputAction.search,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -120,13 +212,27 @@ class _HomeState extends State<Home> {
                 const SizedBox(
                   height: 20.0,
                 ),
-                _buildBooksLoader(context),
+                _buildBookLoader(context),
               ],
             ),
           );
         }),
       ),
     );
+  }
+
+  void startSearch(String value) {
+    setState(() {
+      currentSearchList.clear();
+      currentCount = 0;
+      currentEndPosition = pageCount;
+      currentStartPosition = 0;
+      hasMore = true;
+      value = value.trim();
+      if (!previousSearches.contains(value)) {
+        previousSearches.add(value);
+      }
+    });
   }
 }
 
