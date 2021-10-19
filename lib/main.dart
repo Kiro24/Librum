@@ -2,12 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:librum/models/app_state_manager.dart';
 import 'package:librum/models/book_manager.dart';
 import 'package:provider/provider.dart';
+import 'package:logging/logging.dart';
 
 import 'librum_theme.dart';
 import 'navigation/app_router.dart';
 
 void main() {
+  _setupLogging();
   runApp(const Librum());
+}
+
+void _setupLogging() {
+  Logger.root.level = Level.ALL;
+  Logger.root.onRecord.listen((rec) {
+    print('${rec.level.name}: ${rec.time}: ${rec.message}');
+  });
 }
 
 class Librum extends StatefulWidget {

@@ -8,7 +8,8 @@ import 'package:librum/navigation/librum_pages.dart';
 import 'package:librum/network/book_service.dart';
 import 'package:librum/ui/book_details_screen.dart';
 
-import 'dart:convert';
+import 'package:chopper/chopper.dart';
+import '../../network/model_response.dart';
 import '../../network/book_model.dart';
 import 'package:flutter/services.dart';
 
@@ -78,21 +79,10 @@ class _HomeState extends State<Home> {
     super.dispose();
   }
 
-  // 1
-  Future<APIBookQuery> getBookData(String query, int from, int to) async {
-    // 2
-    final bookJson = await BookService().getBooks(query);
-    // 3
-    final bookMap = json.decode(bookJson);
-    // 4
-    return APIBookQuery.fromJson(bookMap);
-  }
-
   Widget _buildBookCard(
       BuildContext topLevelContext, List<APIItems> items, int index) {
     final itemWidth = MediaQuery.of(context).size.width;
 
-    // 1
     final book = items[index].book;
     return GestureDetector(
       onTap: () {
@@ -104,26 +94,19 @@ class _HomeState extends State<Home> {
           },
         ));
       },
-      // 2
       child: bookCard(book, itemWidth),
     );
   }
 
   Widget _buildBookLoader(BuildContext context) {
-    // 1
     if (searchTextController.text.length < 3) {
       return Container();
     }
-    // 2
-    return FutureBuilder<APIBookQuery>(
-      // 3
-      future: getBookData(searchTextController.text.trim(),
-          currentStartPosition, currentEndPosition),
-      // 4
+
+    return FutureBuilder<Response<Result<APIBookQuery>>>(
+      future: BookService.create().queryBooks(searchTextController.text.trim()),
       builder: (context, snapshot) {
-        // 5
         if (snapshot.connectionState == ConnectionState.done) {
-          // 6
           if (snapshot.hasError) {
             return Center(
               child: Text(snapshot.error.toString(),
@@ -131,23 +114,28 @@ class _HomeState extends State<Home> {
             );
           }
 
-          // 7
           loading = false;
-          final query = snapshot.data;
+
+          final result = snapshot.data?.body;
+
+          if (result is Error) {
+            // Hit an error
+            inErrorState = true;
+            return _buildBookList(context, currentSearchList);
+          }
+
+          final query = (result as Success).value;
+
           inErrorState = false;
           if (query != null) {
             currentSearchList.addAll(query.items);
           }
           return _buildBookList(context, currentSearchList);
-        }
-        // 10
-        else {
-          // 11
+        } else {
           if (currentCount == 0) {
             // Show a loading indicator while waiting for the recipes
             return const Center(child: CircularProgressIndicator());
           } else {
-            // 12
             return _buildBookList(context, currentSearchList);
           }
         }
