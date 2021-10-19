@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:librum/models/app_state_manager.dart';
 import 'package:librum/models/book_manager.dart';
+import 'package:librum/ui/home.dart';
 import 'package:provider/provider.dart';
 import 'package:logging/logging.dart';
+
+import 'data/memory_repository.dart';
 
 import 'librum_theme.dart';
 import 'navigation/app_router.dart';
@@ -43,18 +46,41 @@ class _LibrumState extends State<Librum> {
 
   @override
   Widget build(BuildContext context) {
-    final theme = LibrumTheme.light();
-    return MultiProvider(
-        providers: [
-          ChangeNotifierProvider(create: (context) => _appStateManager),
-          ChangeNotifierProvider(create: (context) => _bookManager),
-        ],
-        child: MaterialApp(
-          theme: theme,
-          home: Router(
-            routerDelegate: _appRouter,
-            backButtonDispatcher: RootBackButtonDispatcher(),
-          ),
-        ));
+    // 1
+    return ChangeNotifierProvider<MemoryRepository>(
+      // 2
+      lazy: false,
+      // 3
+      create: (_) => MemoryRepository(),
+      // 4
+      child: MaterialApp(
+        title: 'Recipes',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          brightness: Brightness.light,
+          primaryColor: Colors.white,
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: const Home(),
+      ),
+    );
   }
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   final theme = LibrumTheme.light();
+  //   return MultiProvider(
+  //       providers: [
+  //         ChangeNotifierProvider(create: (context) => _appStateManager),
+  //         ChangeNotifierProvider(create: (context) => _bookManager),
+  //       ],
+  //       child: MaterialApp(
+  //         theme: theme,
+  //         home: Router(
+  //           routerDelegate: _appRouter,
+  //           backButtonDispatcher: RootBackButtonDispatcher(),
+  //         ),
+  //       ));
+  // }
 }
