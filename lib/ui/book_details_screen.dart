@@ -1,14 +1,11 @@
 import 'dart:ui';
 
 import 'package:provider/provider.dart';
-import '../../network/book_model.dart';
 import '../../data/models/book.dart';
-import '../../data/memory_repository.dart';
+import '../../data/repository.dart';
 
 import 'package:flutter/material.dart';
 import 'package:librum/librum_theme.dart';
-import 'package:librum/navigation/librum_pages.dart';
-import 'package:librum/network/book_model.dart';
 
 class BookDetails extends StatelessWidget {
   final Book book;
@@ -19,7 +16,7 @@ class BookDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final repository = Provider.of<MemoryRepository>(context);
+    final repository = Provider.of<Repository>(context);
     return SafeArea(
       child: Scaffold(
         body: CustomScrollView(

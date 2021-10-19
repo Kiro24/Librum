@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:librum/ui/book_card.dart';
 import 'package:librum/librum_theme.dart';
 import 'package:librum/navigation/librum_pages.dart';
-import 'package:librum/network/book_service.dart';
 import 'package:librum/ui/book_details_screen.dart';
+import 'package:provider/provider.dart';
+import '../../network/service_interface.dart';
 
 import 'package:chopper/chopper.dart';
 import '../../network/model_response.dart';
@@ -108,7 +109,8 @@ class _HomeState extends State<Home> {
     }
 
     return FutureBuilder<Response<Result<APIBookQuery>>>(
-      future: BookService.create().queryBooks(searchTextController.text.trim()),
+      future: Provider.of<ServiceInterface>(context)
+          .queryBooks(searchTextController.text.trim()),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
           if (snapshot.hasError) {

@@ -1,13 +1,14 @@
 import './models/book.dart';
 
 abstract class Repository {
-  List<Book> findAllBooks();
+  Future<List<Book>> findAllBooks();
+  Stream<List<Book>> watchAllBook();
 
-  Book findBookById(int id);
+  Future<Book> findBookById(int id);
 
-  int insertBook(Book book);
+  Future<int> insertBook(Book book);
 
-  void deleteBook(Book book);
+  Future<void> deleteBook(Book book);
 
   Future init();
 

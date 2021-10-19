@@ -4,10 +4,12 @@ import 'package:librum/models/book_manager.dart';
 import 'package:librum/ui/home.dart';
 import 'package:provider/provider.dart';
 import 'package:logging/logging.dart';
+import 'data/repository.dart';
+import 'network/book_service.dart';
+import 'network/service_interface.dart';
 
 import 'data/memory_repository.dart';
 
-import 'librum_theme.dart';
 import 'navigation/app_router.dart';
 
 void main() {
@@ -18,7 +20,7 @@ void main() {
 void _setupLogging() {
   Logger.root.level = Level.ALL;
   Logger.root.onRecord.listen((rec) {
-    print('${rec.level.name}: ${rec.time}: ${rec.message}');
+    // print('${rec.level.name}: ${rec.time}: ${rec.message}');
   });
 }
 
@@ -46,13 +48,17 @@ class _LibrumState extends State<Librum> {
 
   @override
   Widget build(BuildContext context) {
-    // 1
-    return ChangeNotifierProvider<MemoryRepository>(
-      // 2
-      lazy: false,
-      // 3
-      create: (_) => MemoryRepository(),
-      // 4
+    return MultiProvider(
+      providers: [
+        Provider<Repository>(
+          lazy: false,
+          create: (_) => MemoryRepository(),
+        ),
+        Provider<ServiceInterface>(
+          lazy: false,
+          create: (_) => BookService.create(),
+        )
+      ],
       child: MaterialApp(
         title: 'Recipes',
         debugShowCheckedModeBanner: false,

@@ -1,14 +1,13 @@
-// import 'dart:io' show Platform;
-
 import 'package:chopper/chopper.dart';
 import 'book_model.dart';
 import 'model_response.dart';
 import 'model_converter.dart';
+import 'service_interface.dart';
 part 'book_service.chopper.dart';
 
 const String apiUrl = 'https://www.googleapis.com/books/v1/';
 const String apiKey = 'AIzaSyB07nsnPksO-QJyiN_v55zjnumu8j2W180';
-// final apiKey = Platform.environment['../../../apiKey'];
+// final apiKey = rootProject.file('.env');
 
 Request _addQuery(Request req) {
   final params = Map<String, dynamic>.from(req.parameters);
@@ -19,7 +18,8 @@ Request _addQuery(Request req) {
 }
 
 @ChopperApi()
-abstract class BookService extends ChopperService {
+abstract class BookService extends ChopperService implements ServiceInterface {
+  @override
   @Get(path: 'volumes')
   Future<Response<Result<APIBookQuery>>> queryBooks(
     @Query('q') String query,
@@ -38,5 +38,3 @@ abstract class BookService extends ChopperService {
     return _$BookService(client);
   }
 }
-// TODO: Add _addQuery()
-

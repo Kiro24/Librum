@@ -1,44 +1,56 @@
 import 'dart:core';
-import 'package:flutter/foundation.dart';
+import 'dart:async';
 
 import 'repository.dart';
 
 import 'models/book.dart';
 
-class MemoryRepository extends Repository with ChangeNotifier {
+class MemoryRepository extends Repository {
   final List<Book> _currentBooks = <Book>[];
 
+  Stream<List<Book>>? _bookStream;
+  final StreamController _bookStreamController = StreamController<List<Book>>();
+
   @override
-  List<Book> findAllBooks() {
-    return _currentBooks;
+  Stream<List<Book>> watchAllBook() {
+    _bookStream ??= _bookStreamController.stream as Stream<List<Book>>;
+    return _bookStream!;
   }
 
   @override
-  Book findBookById(int id) {
-    return _currentBooks.firstWhere((book) => book.id == id);
+  Future<List<Book>> findAllBooks() {
+    return Future.value(_currentBooks);
   }
 
   @override
-  int insertBook(Book book) {
+  Future<Book> findBookById(int id) {
+    return Future.value(_currentBooks.firstWhere((book) => book.id == id));
+  }
+
+  @override
+  Future<int> insertBook(Book book) {
     _currentBooks.add(book);
 
-    notifyListeners();
+    _bookStreamController.sink.add(_currentBooks);
 
-    return 0;
+    return Future.value(0);
   }
 
   @override
-  void deleteBook(Book book) {
+  Future<void> deleteBook(Book book) {
     _currentBooks.remove(book);
+    _bookStreamController.sink.add(_currentBooks);
 
-    notifyListeners();
+    return Future.value();
   }
 
   @override
   Future init() {
-    return Future.value(null);
+    return Future.value();
   }
 
   @override
-  void close() {}
+  void close() {
+    _bookStreamController.close();
+  }
 }
