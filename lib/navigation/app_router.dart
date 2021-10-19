@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:librum/models/book_manager.dart';
 import 'package:librum/navigation/librum_pages.dart';
-import 'package:librum/screens/login_screen.dart';
-import 'package:librum/screens/spalsh_screen.dart';
+import 'package:librum/ui/home.dart';
+import 'package:librum/ui/login_screen.dart';
+import 'package:librum/ui/spalsh_screen.dart';
 
 import '../models/models.dart';
-import '../screens/screens.dart';
 
 class AppRouter extends RouterDelegate
     with ChangeNotifier, PopNavigatorRouterDelegateMixin {

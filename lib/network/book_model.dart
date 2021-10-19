@@ -41,6 +41,7 @@ class APIBook {
   String? description;
   List<String>? categories;
   double? averageRating;
+  APIImageLinks? imageLinks;
 
   APIBook({
     required this.title,
@@ -48,11 +49,25 @@ class APIBook {
     required this.description,
     required this.categories,
     required this.averageRating,
+    required this.imageLinks,
   });
 
   factory APIBook.fromJson(Map<String, dynamic> json) =>
       _$APIBookFromJson(json);
   Map<String, dynamic> toJson() => _$APIBookToJson(this);
+}
+
+@JsonSerializable()
+class APIImageLinks {
+  String smallThumbnail;
+
+  APIImageLinks({
+    required this.smallThumbnail,
+  });
+
+  factory APIImageLinks.fromJson(Map<String, dynamic> json) =>
+      _$APIImageLinksFromJson(json);
+  Map<String, dynamic> toJson() => _$APIImageLinksToJson(this);
 }
 
 @JsonSerializable()
