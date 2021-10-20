@@ -6,7 +6,7 @@ import 'service_interface.dart';
 part 'book_service.chopper.dart';
 
 const String apiUrl = 'https://www.googleapis.com/books/v1/';
-const String apiKey = 'AIzaSyB07nsnPksO-QJyiN_v55zjnumu8j2W180';
+
 // final apiKey = rootProject.file('.env');
 
 Request _addQuery(Request req) {
