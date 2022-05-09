@@ -7,13 +7,16 @@ import 'package:logging/logging.dart';
 import 'data/repository.dart';
 import 'network/book_service.dart';
 import 'network/service_interface.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'data/memory_repository.dart';
 
 import 'navigation/app_router.dart';
 
-void main() {
+Future<void> main() async {
   _setupLogging();
+  await dotenv.load(fileName: '.env');
+
   runApp(const Librum());
 }
 

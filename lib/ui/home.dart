@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
                 authors: book.authors,
                 categories: book.categories,
                 rating: book.averageRating,
-                image: book.imageLinks!.smallThumbnail,
+                image: book.imageLinks?.smallThumbnail,
                 description: book.description);
 
             return BookDetails(book: detailBook);
