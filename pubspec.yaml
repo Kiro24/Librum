@@ -61,6 +61,7 @@ flutter:
   assets:
     - assets/images/
     - assets/books1.json
+    - .env
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
