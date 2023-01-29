@@ -1,16 +1,11 @@
 # librum
 
-A new Flutter project.
+Created a GoodReads cross-platform app Clone, and utilized Google Books API to fetch Books data, Firebase Auth and Document DB to store authenticated user favorite Books.
+It starts with Login-screen (firebase) and users can search for different Books and read each one details on a different scree.
+I utilized MVVM architecture and Provider State Management Package
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Tech Stack & Architecture
+- Flutter/ Dart
+- Google Books API, Firebase Auth, Document Database
+- Provider State Mangement
+- MVVM
